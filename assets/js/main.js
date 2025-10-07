@@ -27,16 +27,24 @@
 //#1 - Scrivi un programma che stampi i numeri da 1 a 100
     // "for" syntax with "i" initial value 1 with <= 100 condition
 for (let i = 1; i <= 100; i++) {
-    console.log(i);
-    
+    // console.log(i);
+
+    //#2 - per i multipli di 3 stampi “Fizz” al posto del numero
+        // i % 3 === 0 --> Fizz
+    if (i % 3 === 0){
+        console.log('Fizz');
+    } else {
+        console.log(i);
+        
+    }
+
+
+
+
 }
 
-//#2 - per i multipli di 3 stampi “Fizz” al posto del numero
-    // new variable --> fizz
-    // i % 3 === 0 --> Fizz
 
 //#3 - per i multipli di 5 stampi Buzz
-    // new variable --> buzz
     // i % 5 === 0 --> Buzz
 
 //#4 - Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz
