@@ -28,24 +28,30 @@
 // "for" syntax with "i" initial value 1 with <= 100 condition
 for (let i = 1; i <= 100; i++) {
 
-    //#2 - per i multipli di 3 stampi “Fizz” al posto del numero
-    // i % 3 === 0 --> Fizz
-    if (i % 3 === 0) {
+    
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+
+        //#2 - Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz
+        // i % (3 && 5) === 0 --> FizzBuzz
+        console.log('FizzBuzz');
+
+    } else if (i % 3 === 0) {
+
+        //#3 - per i multipli di 3 stampi “Fizz” al posto del numero
+        // i % 3 === 0 --> Fizz
         console.log('Fizz');
+
     } else if (i % 5 === 0) {
-        console.log('Buzz');
-        //#3 - per i multipli di 5 stampi Buzz
+
+        //#4 - per i multipli di 5 stampi Buzz
         // i % 5 === 0 --> Buzz
+        console.log('Buzz');
+
     } else {
         console.log(i);
     }
 
 
-
-
 }
 
 
-
-//#4 - Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz
-// i % (3 && 5) === 0 --> FizzBuzz --> ${fizz}${buzz}
