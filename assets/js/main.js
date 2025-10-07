@@ -26,6 +26,10 @@
 
 //#1 - Scrivi un programma che stampi i numeri da 1 a 100
     // "for" syntax with "i" initial value 1 with <= 100 condition
+for (let i = 1; i <= 100; i++) {
+    console.log(i);
+    
+}
 
 //#2 - per i multipli di 3 stampi “Fizz” al posto del numero
     // new variable --> fizz
